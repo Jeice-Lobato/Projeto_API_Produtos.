@@ -4,10 +4,11 @@ import java.util.List;
 import java.util.UUID;
 
 import br.com.cotiinformatica.domain.entities.Produto;
+import br.com.cotiinformatica.dtos.ProdutoPostDTO;
 
 public interface ProdutoService {
 
-	void create(Produto produto) throws Exception;
+	void create(ProdutoPostDTO dto) throws Exception;
 	void update(Produto produto) throws Exception;
 	void delete(UUID id) throws Exception;
 	
